@@ -1,0 +1,18 @@
+High-level architecture:
+Enterprise Network
+│
+├── Telemetry Agent (Linux)
+│ └── Collects network metrics
+│
+├── API Gateway (FastAPI)
+│ ├── Auth & RBAC
+│ ├── Telemetry ingestion
+│ └── Enterprise APIs
+│
+├── Telemetry Processor
+│ └── Aggregation & SLA metrics
+│
+└── Customer / Partner Consumers
+├── Dashboards
+├── NOCs
+└── Automation Systems
