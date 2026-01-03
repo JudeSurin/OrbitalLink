@@ -1,0 +1,69 @@
+## SpaceLink Enterprise Gateway
+Overview
+
+SpaceLink Enterprise Gateway is an enterprise-grade network telemetry and API integration platform inspired by Starlink Enterprise onboarding workflows. The project simulates how global enterprises, governments, and partners integrate Starlink into existing network environments using secure APIs, telemetry ingestion, and DevOps-first deployment practices.
+
+This repository is designed as a technical sales proof-of-concept (POC) and reference implementation—the same artifacts a Technical Sales Architect would use to accelerate customer adoption, support RFIs, and collaborate with product engineering teams.
+
+Business Problem
+
+Enterprises adopting satellite connectivity (e.g., Starlink) do not simply “plug in” a terminal. They require:
+
+Real-time network telemetry
+
+Secure API access for automation
+
+SLA visibility and alerting
+
+Partner and channel onboarding workflows
+
+Integration with existing NOCs, dashboards, and tooling
+
+SpaceLink addresses these requirements by providing a software-defined integration layer that sits between Starlink-like connectivity and enterprise systems.
+
+Key Capabilities
+1. Network Telemetry Collection
+
+Linux-based telemetry agent
+
+Latency, packet loss, throughput metrics
+
+Configurable polling intervals
+
+Structured JSON output
+
+2. Enterprise API Gateway
+
+RESTful APIs (v1)
+
+Secure ingestion of telemetry
+
+Network health and usage endpoints
+
+Partner onboarding APIs
+
+3. Authentication & Authorization
+
+API keys for devices
+
+OAuth2 + JWT for partners
+
+Role-based access control (RBAC)
+
+4. Containerized Deployment
+
+Dockerized services
+
+Local POC via Docker Compose
+
+Network isolation and service discovery
+
+5. Sales-Ready Artifacts
+
+Reference SDK
+
+Postman collection
+
+curl examples
+
+Clear onboarding documentation
