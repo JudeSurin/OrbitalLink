@@ -1,0 +1,37 @@
+DevOps & Engineering Principles
+
+Infrastructure as code mindset
+
+API-first design
+
+Secure-by-default authentication
+
+Observable systems (telemetry-driven)
+
+Versioned APIs and backward compatibility
+
+Getting Started (POC)
+
+Clone the repository
+
+Start services via Docker Compose
+
+Launch the telemetry agent
+
+Inspect telemetry via API endpoints
+
+Validate integrations using Postman or curl
+
+Detailed steps are provided in docs/onboarding.md.
+
+Roadmap
+
+gRPC telemetry ingestion
+
+Multi-tenant support
+
+Advanced SLA alerting
+
+Partner sandbox environments
+
+CI/CD automation
