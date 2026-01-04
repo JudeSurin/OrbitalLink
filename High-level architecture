@@ -1,4 +1,4 @@
-High-level architecture:
+High-level architecture
 Enterprise Network
 │
 ├── Telemetry Agent (Linux)
