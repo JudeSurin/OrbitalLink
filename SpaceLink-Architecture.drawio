@@ -1,0 +1,168 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="SpaceLink Architecture" id="spacelink-arch">
+    <mxGraphModel dx="2316" dy="1287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" value="SpaceLink Enterprise Gateway - Technical Architecture" vertex="1">
+          <mxGeometry height="40" width="700" x="350" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="layer1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="Device Layer" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="layer2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="Collection Layer" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="layer3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="API Gateway Layer" vertex="1">
+          <mxGeometry height="30" width="140" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="layer4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="Data Layer" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="layer5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="Client Layer" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="sat-terminal" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1" value="🛰️&lt;br&gt;Satellite Terminal&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Fixed Location&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Real Ping Tests&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Starlink-like&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="370" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mobile-unit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1" value="🚗&lt;br&gt;Mobile Unit&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;GPS Tracking&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Real Ping Tests&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Vehicle/Ship/Aircraft&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="545" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iot-gateway" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1" value="🏭&lt;br&gt;IoT Gateway&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Industrial Sites&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Real Ping Tests&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Oil Rigs/Mines&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="710" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="telemetry-agent" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1" value="Real Telemetry Agent&lt;br&gt;(real_agent.py)&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400; text-align: left;&quot;&gt;• Executes actual ping commands&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 400; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400; text-align: left;&quot;&gt;• Parses OS-specific output&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 400; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400; text-align: left;&quot;&gt;• Measures real latency &amp;amp; packet loss&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="280" x="475" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1" edge="1" parent="1" source="sat-terminal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#666666;" target="telemetry-agent">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2" edge="1" parent="1" source="mobile-unit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#666666;" target="telemetry-agent">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow3" edge="1" parent="1" source="iot-gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#666666;" target="telemetry-agent">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666" value="Network Metrics" vertex="1">
+          <mxGeometry height="20" width="100" x="320" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="api-gateway-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2" value="" vertex="1">
+          <mxGeometry height="200" width="770" x="210" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="api-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" value="FastAPI Gateway (SpaceLink Enterprise)" vertex="1">
+          <mxGeometry height="25" width="880" x="180" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1" value="Authentication&lt;br&gt;&amp;amp; RBAC&lt;div&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• OAuth2/JWT&lt;/span&gt;&lt;br style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• API Keys&lt;/span&gt;&lt;br style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• 4 Roles&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="120" x="240" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="tel-api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1" value="Telemetry API&lt;div&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• Send telemetry&lt;/span&gt;&lt;br style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• Query data&lt;/span&gt;&lt;br style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• Statistics&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="120" x="555" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="net-api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1" value="Networks API&lt;div&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• Health scoring&lt;/span&gt;&lt;br style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• SLA tracking&lt;/span&gt;&lt;br style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• Config mgmt&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="120" x="395" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="part-api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1" value="Partners API&lt;div&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• Onboarding&lt;/span&gt;&lt;br style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• API key gen&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400; text-align: left;&quot;&gt;• Integration&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="120" x="700" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="openapi" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1" value="OpenAPI&#xa;Swagger Docs" vertex="1">
+          <mxGeometry height="75" width="120" x="835" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="orm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;fontStyle=1" value="SQLAlchemy ORM&lt;div&gt;&lt;span style=&quot;font-size: 9px; font-weight: 400;&quot;&gt;Telemetry • Networks • Partners • Alerts&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="270" x="470" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow4" edge="1" parent="1" source="telemetry-agent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;strokeColor=#82b366;" target="tel-api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="http-label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#82b366;fontStyle=1" value="HTTP POST&#xa;X-API-Key" vertex="1">
+          <mxGeometry height="30" width="80" x="420" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="ajYMpiTUm-wtP7XV84Db-9" edge="1" parent="1" source="database" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="tel-api" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="database" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1" value="📊&lt;br&gt;PostgreSQL / SQLite&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Multi-tenant&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Time-series data&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="545" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="ajYMpiTUm-wtP7XV84Db-8" edge="1" parent="1" source="dashboard" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" target="net-api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1" value="📊 Streamlit Dashboard&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Real-time monitoring&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;4 interactive tabs&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="145" x="382.5" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="ajYMpiTUm-wtP7XV84Db-7" edge="1" parent="1" source="sdk" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="auth" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="640.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sdk" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1" value="🐍 Python SDK&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Spacelink.Client&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="110" x="245" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="ajYMpiTUm-wtP7XV84Db-10" edge="1" parent="1" source="third-party" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="part-api" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="third-party" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1" value="🔌 Third-Party Apps&lt;div&gt;&lt;span style=&quot;font-size: 10px; font-weight: 400;&quot;&gt;Grafana, Prometheus, etc.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="130" x="695" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="external-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;dashed=1" value="" vertex="1">
+          <mxGeometry height="180" width="220" x="1110" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="external-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1" value="External Services" vertex="1">
+          <mxGeometry height="20" width="220" x="1110" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="ping-target" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11" value="🌐 Ping Targets" vertex="1">
+          <mxGeometry height="40" width="180" x="1130" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ping-detail" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9" value="8.8.8.8, 1.1.1.1" vertex="1">
+          <mxGeometry height="10" width="180" x="1130" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="docker" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11" value="🐳 Docker" vertex="1">
+          <mxGeometry height="35" width="85" x="1130" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="github" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11" value="📁 GitHub" vertex="1">
+          <mxGeometry height="35" width="85" x="1225" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ci-cd" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11" value="⚙️ CI/CD Pipeline" vertex="1">
+          <mxGeometry height="25" width="180" x="1130" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow9" edge="1" parent="1" source="iot-gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#b85450;dashed=1;" target="ping-target">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ping-arrow-label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#b85450" value="ICMP Ping" vertex="1">
+          <mxGeometry height="20" width="70" x="940" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;strokeWidth=1" value="" vertex="1">
+          <mxGeometry height="150" width="220" x="1110" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1" value="Legend" vertex="1">
+          <mxGeometry height="20" width="220" x="1110" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;strokeWidth=2" value="" vertex="1">
+          <mxGeometry height="15" width="30" x="1120" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10" value="Data Flow (Telemetry)" vertex="1">
+          <mxGeometry height="20" width="165" x="1155" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;strokeWidth=2;dashed=1" value="" vertex="1">
+          <mxGeometry height="15" width="30" x="1120" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10" value="API Requests (REST)" vertex="1">
+          <mxGeometry height="20" width="165" x="1155" y="407" as="geometry" />
+        </mxCell>
+        <mxCell id="legend3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#b85450;strokeWidth=2;dashed=1" value="" vertex="1">
+          <mxGeometry height="15" width="30" x="1120" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="legend3-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10" value="Network Tests (ICMP)" vertex="1">
+          <mxGeometry height="18" width="165" x="1155" y="432" as="geometry" />
+        </mxCell>
+        <mxCell id="legend4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14" value="🛰️" vertex="1">
+          <mxGeometry height="20" width="30" x="1120" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="legend4-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10" value="Real Hardware/Software" vertex="1">
+          <mxGeometry height="20" width="165" x="1155" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-stack" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;fontStyle=2" value="Tech Stack: Python • FastAPI • SQLAlchemy • Streamlit • Docker • OAuth2/JWT" vertex="1">
+          <mxGeometry height="20" width="880" x="180" y="850" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
